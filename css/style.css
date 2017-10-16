@@ -5,7 +5,7 @@
 
 .text {
     height: 9em;
-
+    text-align: left;
 
     /*
     white-space: nowrap;

@@ -1,5 +1,5 @@
 $(function () {
-    var len = 260; // 超過260個字以"..."取代
+    var len = 300; // 超過300個字以"..."取代
     $(".text").each(function (i) {
         if ($(this).text().length > len) {
             //            $(this).attr("title", $(this).text());
