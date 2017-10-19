@@ -1,9 +1,20 @@
 $(function () {
-    var len = 300; // 超過300個字以"..."取代
-    $(".text").each(function (i) {
+
+    $(".box .text").each(function (i) {
+        let len = 140; // 超過140個字以"..."取代
         if ($(this).text().length > len) {
             //            $(this).attr("title", $(this).text());
-            var text = $(this).text().substring(0, len - 1) + "...";
+            var text = $(this).text().substring(0, len - 1) + "  ...";
+            //            console.log(text);
+            $(this).text(text);
+
+        }
+    });
+    $(".text").each(function (i) {
+        let len = 180; // 超過180個字以"..."取代
+        if ($(this).text().length > len) {
+            //            $(this).attr("title", $(this).text());
+            var text = $(this).text().substring(0, len - 1) + " ...";
             $(this).text(text);
         }
     });

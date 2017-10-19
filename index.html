@@ -7,28 +7,36 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/timeLine.css">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!--
+    <style> a.cd-read-more:hover { text-decoration: none; background-color: black; }
+
+</style>
+-->
 </head>
 
 <body>
+
     <div class="container">
-        <div class="jumbotron">
+        <div class="card">
             <section class="introduce">
                 <div class="row">
                     <div class="col-sm-12 intro_image_text">
                         <div class="row">
                             <div class="col-sm-4 image text-center">
-                                <img class="img img-thumbnail " src="img/img.jpg" alt="">
+                                <img class="img img-thumbnail img-responsive " src="img/img.jpg" alt="" style="">
                             </div>
                             <div class="col-sm-8">
                                 <div class="selIntro">
-                                    <H3>陳世承</H3>
-                                    <div class="text">
-                                        從每天敲工程計算機的統計領域轉彎跳到能天天很開心地寫程式的小小工程師，因此相較他人，對於數據有點小敏感，常能發現一般人不會發現的問題。喜歡不斷的超越自己，學習自己現在不會的事物。喔，順帶一提：我很喜歡<strong><q>人生的長度未知但寬度卻操之在己</q></strong>這句話，而工程師就是必須不斷的超越現在的自己以跟上時代的職業...所以我常覺得我的天職就是工程師了。
+                                    <H1>陳世承</H1>
+                                    <div class="selIntro_Text">
+                                        從每天敲工程計算機的統計領域轉彎跳到能天天很開心地寫程式的小小工程師，因此相較他人，對於數據有點小敏感，常能發現一般人不會發現的問題。喜歡不斷的超越自己，學習自己現在不會的事物。喔，順帶一提：我很喜歡<strong><q>人生的長度未知但寬度卻操之在己</q></strong>這句話，而工程師就是必須不斷的超越現在的自己以跟上時代的職業...所以我常覺得我的天職就是工程師了~~~。
                                     </div>
                                 </div>
                             </div>
@@ -49,15 +57,167 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6 Education">Education</div>
-                    <div class="col-sm-6 Blogs">Blogs</div>
-                </div>
             </section>
 
 
-
             <section class="panel-group" id="accordion">
+
+                <!-- 面板 -1 開始 -->
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#blog">blog</a>
+                        </div>
+                    </div>
+
+                    <div id="blog" class="pannel-collapse collapse ">
+                        <div class="panel-body">
+                            <section>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-offset-4 col-md-4 ">
+                                            <!-- 彈出視窗觸發按鈕 開始 -->
+                                            <h1 style="font-size: 50px;">
+                                                <a type="button" class="" data-toggle="modal" data-target="#myModal">網誌</a>
+                                            </h1>
+                                            <!-- 彈出視窗觸發按鈕 結尾 -->
+
+                                            <!-- 彈出視窗 開始 -->
+                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                            <h3 class="modal-title" id="myModalLabel">要不要去看看我的網誌呢???</h3>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            硬要寫個彈跳視窗XD:
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">不要</button>
+                                                            <a class="btn btn-default" href="https://www.facebook.com/fourtune.chen/notes?lst=100000070526416%3A100000070526416%3A1508315760">好呀</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 彈出視窗 結尾 -->
+                                        </div>
+                                    </div>
+
+
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- col -->
+                                        <div class="col-sm-offset-1 col-md-4 col-sm-6 ">
+                                            <div class="box">
+                                                <h2>高科技創業修課心得</h2>
+                                                <div class="text">一切的起源都來自於曾經父親很明確地告訴我:「你真的不是當老闆的那一塊料…」這句話，有種不服氣的感覺。當然另一方面是想測試自己的能力以及是想讓自己在畢業前能夠增廣見聞，體驗自己當老闆的經驗，算是另一種性向測驗吧。在課堂開始前，與周遭人分享我打算修這門課的時候就遇到了好幾次的質疑，來自於父母、來自於朋友。都是同樣的問題「創業是可以被教導的嗎？」父親曾經說你是哪塊料，這輩子大概就是那塊料了…當然當時的我並無相關的知識，也就無從反駁，甚至還曾被說服，動了念頭要將這堂課退掉。只是因為一些事宜最後並沒有退，也就帶著疑問的下去地繼續修這堂課了。</div>
+                                                <div class="row">
+                                                    <p class="col-sm-offset-3 col-sm-5"><a class="btn btn-primary btn-lg" href="https://www.facebook.com/notes/ci-ty-chen/%E9%AB%98%E7%A7%91%E6%8A%80%E5%89%B5%E6%A5%AD%E4%BC%91%E5%85%8B%E5%BF%83%E5%BE%97-%E8%94%A1%E4%BB%81%E6%9D%BE%E8%80%81%E6%96%BD/1543027002387251/" role="button">看全文</a></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- col end -->
+                                        <!-- col -->
+                                        <div class="col-sm-offset-1  col-md-4 col-sm-6 ">
+                                            <div class="box">
+                                                <h2>超極資本主義 觀後心得</h2>
+                                                <div class="text">此書的觀點令我訝異，我們常常在說某個企業如何的不盡責!?如何不當的壓榨員工等等…但殊不知我們卻是導致他們這麼做的主要原因。任何人都具有兩種身分。公民以及(投資人/消費者)，在當今這個時代，我們做為消費者的力量是非常的強大的，大到可以逼迫任何的大企業做任何的事情。」昔日在市場上獲得寡占的企業，對於替員工加薪水這件事是不像現在一樣那麼的反彈的，因為她們最多就是把成本再轉嫁給消費者而已。</div>
+                                                <div class="row">
+                                                    <p class="col-sm-offset-3 col-sm-5"><a class="btn btn-primary btn-lg" href="#" role="button">看全文</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- col end -->
+                                        <!-- 第三個col在平板的clearfix -->
+                                        <div class="clearfix visible-sm-block"></div>
+                                        <!-- col -->
+                                        <!-- col end -->
+                                        <!-- 第四個col在筆電、大螢幕電腦的clearfix -->
+                                        <div class="clearfix visible-md-block visible-lg-block"></div>
+                                        <!-- col -->
+                                        <div class="col-sm-offset-1 col-md-4 col-sm-6 feature">
+                                            <div class="box">
+                                                <h2>大演算 觀後心得</h2>
+                                                <div class="text">這本書剛拿到手的時候，初看字面的意思以為是一本，在講IT資訊工程或一些工程邏輯演算法方面的工具書呢! 經過仔細翻閱以後才知道它主要是在講「機器學習(Machine Learning)」方面的書籍。當然它與大數據的應用面是有一些重疊的部分，不過這本書主要關注的重點仍在於細究「機器學習(Machine Learning)」方面的問題。本書的作者是「佩德羅.多明戈斯(Pedro Domingos)」電腦工程博士，現任華盛頓大學電腦工程系教授，該系是全美前十大電腦工程名校。他初試啼聲聞名圈內是兩度在資料採礦大會上獲得最佳論文，並在此後成為該領域的意見領袖。他在專業領域內獲獎無數，還包含美國國家科學職業成就奬，他也是史丹佛大學及麻省理工學院客座教授。他最有名的功績是破解了一個在機器學習領域中長久以來的瓶頸，成功把機器學習、哲學與人工智慧結合起來。這個突破性的研究還曾經登上著名的《新科學人》（New Scientist）雜誌的封面故事。</div>
+                                                <div class="row">
+                                                    <p class="col-sm-offset-3 col-sm-5"><a class="btn btn-primary btn-lg" href="https://www.facebook.com/notes/ci-ty-chen/%E6%9B%B8%E5%A4%A7%E6%BC%94%E7%AE%97/1429592400397379/" role="button">看全文</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- col end -->
+                                        <!-- col -->
+                                        <div class="col-sm-offset-1  col-md-4 col-sm-6 feature">
+                                            <div class="box">
+                                                <h2>穀倉效應 觀後心得</h2>
+                                                <div class="text">說實話,在讀此書之前,若是有人跟我說: 分工有時候是無效率的. 我想我一定會大笑三聲, 並說 怎麼可能??? 因為在我的堅信的認知之中, 必須分工合作才能發揮組織的最大效應... 人類有今日的繁榮,也都拜緊密的分工所賜. 不然人多事多口又雜,沒有分工,怎麼可能有效率的工作???但就是這種根深蒂固的習慣才會讓我們都不會去試圖去質疑 , 有些問題其實是因為分工所造成的...或者更正確地說是: 不恰當的分工 或是 過度的分工.</div>
+                                                <div class="row">
+                                                    <p class="col-sm-offset-3 col-sm-5"><a class="btn btn-primary btn-lg" href="https://www.facebook.com/notes/ci-ty-chen/%E7%A9%80%E5%80%89%E6%95%88%E6%87%89-%E5%90%89%E8%93%AE%E9%82%B0%E8%92%82gillian-tett/1480810355275583/" role="button">看全文</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- col end -->
+                                    </div>
+                                    <!-- row end -->
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <!-- 面板 -1 結尾 -->
+
+
+                <!-- 面板0開始 -->
+                <div class="panel panel-default panel-success">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#education">education</a>
+                        </div>
+                    </div>
+
+                    <div id="education" class="pannel-collapse collapse ">
+                        <div class="panel-body">
+                            <div class="col-sm-12 Education">
+                                <H3 class='text-center'>Education</H3>
+                                <table class="table table-striped table-hover table-responsive ">
+                                    <thead>
+                                        <tr>
+                                            <th>學歷</th>
+                                            <th>學校</th>
+                                            <th>學系</th>
+                                            <th>年份</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="">
+                                            <td><span class="badge">研究所 :</span></td>
+                                            <td> <span>清華大學</span></td>
+                                            <td>資訊工程研究所</td>
+                                            <td>(2014/9 ~ 2017/9)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="badge">大學 &nbsp &nbsp :</span></td>
+                                            <td> <span>輔仁大學</span></td>
+                                            <td>統計資訊學系</td>
+                                            <td>(2008/9 ~ 2012/7)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="badge">高中 &nbsp &nbsp :</span></td>
+                                            <td> <span>新莊高中</span></td>
+                                            <td>普通科</td>
+                                            <td>(2005/7 ~ 2008/7)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 面板0結尾 -->
+
                 <!-- 面板1開始 -->
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -66,7 +226,7 @@
                         </div>
                     </div>
 
-                    <div id="projects" class="pannel-collapse collapse in">
+                    <div id="projects" class="pannel-collapse collapse">
                         <div class="panel-body text-center">
                             <div class="school_project">
                                 <H2>學校的專案</H2>
@@ -84,7 +244,7 @@
                                     <div class="col-md-4 col-sm-12">
                                         <h3>2<a class="" href="#"><i class="fa fa-id-card" aria-hidden="true"></i></a></h3>
                                         <div class="text">
-                                            我也還在想
+                                            我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想我也還在想
                                         </div>
                                     </div>
                                     <!-- col end -->
@@ -188,23 +348,220 @@
                 <!-- 面板1結尾 -->
 
                 <!-- 面板2開始 -->
-                <div class="panel panel-default">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         <div class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#skills">skills</a>
                         </div>
                     </div>
 
-                    <div id="skills" class="pannel-collapse collapse">
+                    <div id="skills" class="pannel-collapse collapse in">
                         <div class="panel-body">
-                            projects
+                            <!--                           第二層面板-->
+                            <div class="panel panel-danger">
+                                <!--                            第二層地一個面板開始-->
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#skills" href="#tableP">表格呈現</a>
+                                    </div>
+                                </div>
+
+                                <div id="tableP" class="pannel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-offset-1 col-sm-10">
+                                                    <table class="table table-striped table-hover table-responsive ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>技能</th>
+                                                                <th>學習時間</th>
+                                                                <th>描述</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <h4><a href="#add">C/C++</a></h4>
+                                                                </td>
+                                                                <td> <span>2014/09</span></td>
+                                                                <td><span class="badge" style="background-color: black">基本語法尚可,但很久沒使用</span>&nbsp;&nbsp;<a class="btn btn-default btn-primary" target="_blank" href="https://github.com/s0920832252/OS_Forg">Pthread</a>&nbsp;&nbsp;<a class="btn btn-default btn-primary" target="_blank" href="https://github.com/s0920832252/OS_LRU">LRU</a></td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td>
+                                                                    <h4><a href="#test">JAVA</a></h4>
+                                                                </td>
+                                                                <td> <span>2015/11</span></td>
+                                                                <td><span class="badge" style="background-color: red">語法熟悉</span>&nbsp;&nbsp;<a class="btn btn-default btn-primary" target="_blank" href="https://github.com/s0920832252/HelloAndroid">簡單Android APP開發</a>&nbsp;&nbsp;<a class="btn btn-default btn-primary" target="_blank" href="https://drive.google.com/file/d/0B8rbs492KZgrOHZiV1dmZnZDakk/view?usp=sharing">SCJP證照(2016 / 6)</a>&nbsp;&nbsp;<a class="btn btn-default btn-primary" target="_blank" href="https://github.com/s0920832252/Hello-Leetcoder">LeetCode刷題100題up</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <h4><a href="#test">Matlab</a></h4>
+                                                                </td>
+                                                                <td> <span>2016/02</span></td>
+                                                                <td><span class="badge" style="background-color: red">語法熟悉</span>&nbsp;&nbsp;<a class="btn btn-default btn-primary" target="_blank" href="https://github.com/s0920832252/An-Improved-Synthetic-Minority-Over-sampling-Technique-for-Imbalanced-Data-Set-Learning">論文環境</a>&nbsp;&nbsp;<a class="btn btn-default btn-primary" target="_blank" href="https://github.com/s0920832252/Number-Optimization-Class-">數值最佳化</a>&nbsp;&nbsp;<a class="btn btn-default btn-primary" target="_blank" href="https://github.com/s0920832252/Machine-Learning-class">機器學習</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <h4><a href="#test">VBA</a></h4>
+                                                                </td>
+                                                                <td> <span>2016/06</span></td>
+                                                                <td><span class="badge" style="background-color: red">語法熟悉</span>&nbsp;&nbsp;<a class="btn btn-default btn-primary" target="_blank" href="https://github.com/s0920832252/T2AEditor">T2AEditor</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <h4><a href="#test">HTML</a></h4>
+                                                                </td>
+                                                                <td> <span>2017/09</span></td>
+                                                                <td><span class="badge">正在學習中~</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <h4><a href="#test">CSS</a></h4>
+                                                                </td>
+                                                                <td> <span>2017/09</span></td>
+                                                                <td><span class="badge">正在學習中~</span>&nbsp;&nbsp;<a class="btn btn-default btn-primary" target="_blank" href="https://github.com/s0920832252/Select-the-plates">Select the plates</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <h4><a href="#test">JavaScript</a></h4>
+                                                                </td>
+                                                                <td> <span>2017/09</span></td>
+                                                                <td><span class="badge">正在學習中~</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <h4><a href="#test">Python</a></h4>
+                                                                </td>
+                                                                <td> <span>2017/10</span></td>
+                                                                <td><span class="badge">正在學習中~</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                            第二層地一個面板結束-->
+
+                                <!--                            第二層地二個面板開始-->
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <a data-toggle="collapse" data-parent="skills" href="#timeLineP">時間軸呈現</a>
+                                    </div>
+                                </div>
+
+                                <div id="timeLineP" class="pannel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <section id="cd-timeline" class="cd-container">
+                                            <div class="cd-timeline-block">
+                                                <div class="cd-timeline-img cd-picture">
+                                                    <img src="img/cd-icon-picture.svg" alt="Picture">
+                                                </div>
+
+                                                <div class="cd-timeline-content" id="test">
+                                                    <h2>C/C++</h2>
+                                                    <p>在作業系統(OS)這堂課,我從完全不會程式語言到對於C有一定程度的了解...修課期間不只一次仰天痛哭，我幹嘛不選擇修那堂不需要寫程式的OS課而要來這虐待自己，不過事後我非常慶幸自己修了這堂課，因為我在這堂課不只學會了<u>C語言另外還有使用putty遠端連線到遠端主機，以及在Linux環境之下使用Vim開發C程式，和MakeFile以及Script的使用，</u>我認為這堂課開啟了我面對程式的大門。</p>
+
+                                                    <ul class="list-unstyled list-inline">
+                                                        <li><a class="cd-read-more" href="https://github.com/s0920832252/OS_Forg" target="_blank">Pthread</a></li>
+                                                        <li><a class="cd-read-more" href="https://github.com/s0920832252/OS_LRU" target="_blank">LRU</a></li>
+                                                    </ul>
+
+                                                    <span class="cd-date">2014/09 - 2015/01</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="cd-timeline-block">
+                                                <div class="cd-timeline-img cd-movie">
+                                                    <img src="img/cd-icon-movie.svg" alt="Movie">
+                                                </div>
+
+                                                <div class="cd-timeline-content">
+                                                    <h2>JAVA</h2>
+                                                    <p>碩一下期間修的都是比較偏理論的課程，除了計算機組織這堂課之外都沒有用到程式，然後我也不知道哪根筋不對，突然就開始學習<u>JAVA這個語言</u>，剛好這個時期是APP比較火紅(其實已經紅一兩年了)，同一時期，同學龍哥邀請我一起做LeetCode這個online Judge上面的題目，於是乎我在學習JAVA語法的同時，跟他們一起寫LeetCode，作為語法的練習，再一兩個月後，我覺得對於語法有一定熟悉程度後，便開始接觸<u>android app(去圖書館借書，照著上面做)。</u></p>
+
+                                                    <ul class="list-unstyled list-inline">
+                                                        <li><a class="cd-read-more" href="https://github.com/s0920832252/Hello-Leetcoder" target="_blank">LeetCode刷題100題up</a></li>
+                                                        <li><a class="cd-read-more" href="https://github.com/s0920832252/HelloAndroid" target="_blank">APP</a></li>
+                                                    </ul>
+
+                                                    <span class="cd-date">2015/11 - 2016/06</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="cd-timeline-block">
+                                                <div class="cd-timeline-img  cd-picture">
+
+                                                    <img src="img/cd-icon-picture.svg" alt="Picture">
+                                                </div>
+
+                                                <div class="cd-timeline-content">
+                                                    <h2>MATLAB</h2>
+                                                    <p>再修李哲榮老師的<u>數質最佳化</u>以及吳尚鴻老師的<u>機器學習</u>的時候，因為必須使用<u>MATLAB</u>來寫作業，因此就只好學了，說實在話，跟<u>R</u>很像~上手很快，應該不到一個禮拜吧。反倒是那些數學理論的推倒花掉我大部分的時間...很生氣的是這段時間我一天至少念了四個小時在機器學習上面，分數還只拿到B，然後班上活下來的人(印象中死了一半以上)裡面大概有四分之三是A吧...該說清大很多天才嗎，還是我是笨蛋呢T_T。</p>
+
+                                                    <ul class="list-unstyled list-inline">
+                                                        <li><a class="cd-read-more" href="https://github.com/s0920832252/Number-Optimization-Class-" target="_blank">數值最佳化</a></li>
+                                                        <li><a class="cd-read-more" href="https://github.com/s0920832252/Machine-Learning-class" target="_blank">機器學習</a></li>
+                                                    </ul>
+
+                                                    <span class="cd-date">2016/02 - 2016/06</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="cd-timeline-block">
+                                                <div class="cd-timeline-img cd-movie">
+                                                    <img src="img/cd-icon-movie.svg" alt="Movie">
+                                                </div>
+
+                                                <div class="cd-timeline-content ">
+                                                    <h2>VBA</h2>
+                                                    <p>這個時間被教授告知必須延畢一年，老實說心情很低落，另外就是自己過去存的讀書基金也所剩無幾...因此決定找個實習來賺生活費，工研院的實習需要使用VBA這個語言，大概花了兩個禮拜學會，再花了兩個禮拜接起前人的工作內容。由於前人並非資工系的學生，因此有時候使用的方法較無效率，這個時候就是我活學活用碩一下修的演算法這堂課的內容了。我本來是這麼想啦...然後就變成常常自己留下來想把事情做好(沒有錢T_T)...因為有時候解決的做法就是想不出來...在這個時期，我覺得我除了<u>學會VBA這個語言之外，也了解到自己一個人鑽死胡同是會拖累團隊的事情...有時候跟別人求救一下，大家一起腦力激盪一下，說不定就把問題解決了。</u></p>
+
+                                                    <ul class="list-unstyled list-inline">
+                                                        <li><a class="cd-read-more" href="https://github.com/s0920832252/T2AEditor" target="_blank">T2AEditor</a></li>
+                                                    </ul>
+
+                                                    <span class="cd-date">2016/06 - 2017/08</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="cd-timeline-block">
+                                                <div class="cd-timeline-img cd-picture">
+                                                    <img src="img/cd-icon-location.svg" alt="Location">
+                                                </div>
+
+                                                <div class="cd-timeline-content">
+                                                    <h2>論文環境</h2>
+                                                    <p>由於我們實驗室是做網路的，老師的專長也在網路，我算是我們實驗室第一個作機器學習研究的學生，再尋找題目的過程中也曾經詢問過老師: &quot;用來建置實驗環境的語言要選擇R或者是MATLAB還是PYTHON呢 ?&quot;，老師的回答是MATLAB，至於原因好像是能夠比較快實作出來還是什麼的，我忘記了。總之，雖然沒什麼，但我建置的環境將由學弟妹們繼續使用下去，想到就覺得很開心~喔，對了，在研究的這段時間，我覺得我學會了解決某一個特定的問題的能力，不論是透過先人的研究，站在巨人的肩膀上，或者是自己閉門造車，我覺得都是需要一點訣竅的。</p>
+
+                                                    <ul class="list-unstyled list-inline">
+                                                        <li><a class="cd-read-more" href="https://github.com/s0920832252/An-Improved-Synthetic-Minority-Over-sampling-Technique-for-Imbalanced-Data-Set-Learning" target="_blank">論文環境建置</a></li>
+                                                    </ul>
+
+                                                    <span class="cd-date">2014/09 - 2015/01</span>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <!--                            第二層地個面板結束-->
+                            </div>
+
+
+
+
+
+
+
                         </div>
                     </div>
                 </div>
                 <!-- 面板2結尾 -->
 
                 <!-- 面板3開始 -->
-                <div class="panel panel-default">
+                <div class="panel panel-info">
                     <div class="panel-heading">
                         <div class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#featrueLearning">featrueLearning</a>
@@ -212,24 +569,172 @@
                     </div>
 
                     <div id="featrueLearning" class="pannel-collapse collapse">
-                        <div class="panel-body">
-                            featrueLearning
+                        <div class="panel-body text-center">
+                            <div class="futurePlan">
+                                <H2>未來計畫1</H2>
+                                <div class="row">
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>1<a class="" href="#"><i class="fa fa-meetup" aria-hidden="true"></i></a> </h3>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt porro cumque, maxime sit dolorum, sequi non, nostrum optio ducimus, voluptate dolorem soluta explicabo. Blanditiis saepe cumque omnis fuga. Nulla, debitis.
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                    <!-- col start -->
+
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>2<a class="" href="#"><i class="fa fa-id-card" aria-hidden="true"></i></a></h3>
+                                        <div class="text">
+                                            未來計畫QQQQ
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>3<a class="" href="#"><i class="fa fa-microchip" aria-hidden="true"></i></a> </h3>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat sed cumque quo expedita mollitia, similique consequatur beatae sunt pariatur alias veniam rem tenetur cum illo nulla, dolores numquam animi asperiores.
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                </div>
+                                <div class="row">
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>1<a class="" href="#"><i class="fa fa-meetup" aria-hidden="true"></i></a> </h3>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt explicabo odit voluptatum ex obcaecati, eos amet voluptate nisi assumenda esse, vel commodi provident ea, quidem illum quod culpa in cumque!
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                    <!-- col start -->
+
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>2<a class="" href="#"><i class="fa fa-id-card" aria-hidden="true"></i></a></h3>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores minus distinctio ullam id esse, necessitatibus numquam, aliquid impedit, quisquam sequi reprehenderit explicabo libero in nesciunt adipisci! Impedit eius soluta, vero?
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>3<a class="" href="#"><i class="fa fa-microchip" aria-hidden="true"></i></a> </h3>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat sed cumque quo expedita mollitia, similique consequatur beatae sunt pariatur alias veniam rem tenetur cum illo nulla, dolores numquam animi asperiores.
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                </div>
+                            </div>
+                            <div class="not_school_project">
+                                <H2>futurePlan2</H2>
+                                <div class="row">
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>1<a class="" href="#"><i class="fa fa-meetup" aria-hidden="true"></i></a> </h3>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi soluta voluptate, reiciendis sunt earum nam voluptatum laborum fuga libero repellendus enim nesciunt maiores, nostrum animi autem explicabo odit odio quam. Ducimus vel reiciendis eaque! Commodi laboriosam doloribus excepturi quaerat cupiditate, cumque enim velit exercitationem atque earum ea accusantium fugiat explicabo, ab optio deserunt minima laudantium modi eos distinctio aspernatur vitae, ex! Deserunt sit delectus quis sint accusamus repellendus quaerat, inventore, aperiam dolorem magni minima fugiat quod libero placeat itaque suscipit hic veniam vel facere. Ducimus hic doloremque, fugiat quidem quia! Dolorum itaque hic illum enim velit, delectus odit voluptates nam, ex obcaecati! Illum ipsum voluptatibus quaerat, reiciendis excepturi quibusdam error, quasi earum natus culpa officiis non. Corrupti quos ipsum laborum harum explicabo ab, laudantium excepturi, ea illo quibusdam cum perspiciatis hic perferendis vitae minima facilis error, alias possimus officia dignissimos. Suscipit labore molestiae atque veritatis obcaecati dolores cum aliquam recusandae fuga ut eligendi, voluptates, rerum fugiat. Fugiat, alias, placeat? Laudantium temporibus aliquam soluta velit explicabo vitae dignissimos doloremque facere, eum dolor. Tempore voluptates beatae velit placeat veritatis deserunt asperiores repudiandae laudantium, deleniti! Debitis sequi praesentium deleniti, dolores tenetur suscipit eligendi similique fugit nemo voluptatum sit sed, obcaecati tempore doloribus beatae, totam voluptate asperiores sint, exercitationem dignissimos rem quaerat quod. Nihil veniam repudiandae consequatur qui explicabo dicta nesciunt est voluptates repellat, non commodi hic dolores fugiat ullam necessitatibus repellendus rerum dolorem enim laudantium animi assumenda. Quo, fugiat asperiores et eos incidunt doloremque sequi, aliquam, rem eius eveniet atque reiciendis iure quae! Sequi magni iste praesentium tempore harum ut expedita ipsum voluptate dicta in odio, cumque dolorum. Ullam sint atque blanditiis quidem eveniet facere ipsa similique fuga quo cupiditate veritatis iure placeat quas maiores quia eius, at soluta nisi. Ea, unde molestiae reprehenderit ratione dicta quia aperiam nemo quis, sit inventore commodi.
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                    <!-- col start -->
+
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>2<a class="" href="#"><i class="fa fa-id-card" aria-hidden="true"></i></a></h3>
+                                        <div class="text">
+                                            我也還在想
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>3<a class="" href="#"><i class="fa fa-microchip" aria-hidden="true"></i></a> </h3>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat sed cumque quo expedita mollitia, similique consequatur beatae sunt pariatur alias veniam rem tenetur cum illo nulla, dolores numquam animi asperiores.
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                </div>
+                                <div class="row">
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>1<a class="" href="#"><i class="fa fa-meetup" aria-hidden="true"></i></a> </h3>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt explicabo odit voluptatum ex obcaecati, eos amet voluptate nisi assumenda esse, vel commodi provident ea, quidem illum quod culpa in cumque!
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                    <!-- col start -->
+
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>2<a class="" href="#"><i class="fa fa-id-card" aria-hidden="true"></i></a></h3>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores minus distinctio ullam id esse, necessitatibus numquam, aliquid impedit, quisquam sequi reprehenderit explicabo libero in nesciunt adipisci! Impedit eius soluta, vero?
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <h3>3<a class="" href="#"><i class="fa fa-microchip" aria-hidden="true"></i></a> </h3>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat sed cumque quo expedita mollitia, similique consequatur beatae sunt pariatur alias veniam rem tenetur cum illo nulla, dolores numquam animi asperiores.
+                                        </div>
+                                    </div>
+                                    <!-- col end -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- 面板3結尾 -->
 
                 <!-- 面板4開始 -->
-                <div class="panel panel-default">
+                <div class="panel panel-warning">
                     <div class="panel-heading">
                         <div class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#autobiography">autobiography</a>
                         </div>
                     </div>
 
-                    <div id="autobiography" class="pannel-collapse collapse">
+                    <div id="autobiography" class="pannel-collapse collapse ">
                         <div class="panel-body">
-                            autobiography
+                            <div class="autobiography">
+                                <div class="segmen">
+                                    <H1>自許</H1>
+                                    <p>或許我並非頂尖，但我願意以樂觀積極的態度去面對一切挑戰，只要是我所缺 乏的能力、知識，我都會努力去學習，不論是自學或是請教他人。在團體中， 擁有不同才能的夥伴能夠互相請教、交流新知，共同解決困難的問題，在這些 過程中，往往能夠看到自己的不足與弱項，進而去補足。就像是我大學並非資 工科系畢業的，而是統計系，這或許是我的弱項，但我認為這或許也是我的優 勢所在，因為若是轉念一想，與別人相比，我除了資工的專長外還多了他們一 項統計的專業。當然，我並不會妄自菲薄，而是會想盡辦法改善自己，超越別 人。我明白自己在未來該學的事物還有很多，但「只要堅信你自己做得到，你一定行！」我就一定能夠順利地克服未來的挑戰！
+                                    </p>
+                                </div>
+                                <div class="segmen">
+                                    <H1>大學畢業以前</H1>
+                                    <p>這時的我是一個得過且過的人，對於未來會感到茫然但卻也不曾試圖努力 去做出任何的改變，只是每天渾渾噩噩的度過日子，所謂的生命就像是整個人 泡在酒精之中，你偶爾會驚覺到時間正在流逝，但卻早已對此麻木與淡然。這 個狀態一直持續到大學畢業典禮當天，我突然感到徬徨以及不知所措，我開始 覺得心虛，覺得不夠資格拿起正拿在手上的畢業證書，即使畢業時的成績名列 全班前十五名，但這卻只是讓我感到更加的空虛，我不斷地質問自己大學四年 的時間是否是全心全意度過的?答案是否定的… 對於自己，我是很感到自卑的，甚至常常覺得自己是天底下卻沒有用的 人。但也正因為我認為自己是如此的卑微，所以我願意花很多的時間來精進自 己。在戶塚隆將著作的「為什麼世界頂尖人士都重視這樣的基本功」一書中， 清楚地寫道 : 永遠不要在自己的生崖之中留下逃學紀錄。你應該假裝自己很優秀，直到你真的很優秀了為止。 在這時，我認為自己最想要改變的事情就是想要一個好的學歷，因為我認 為一張夜間部的私校大學文憑是很丟人的，所以在付出充分且充足的準備之 後，我也順利的考上了清華資工研究所。而這也讓我更加地相信只要努力，只要你願意付出，勢必就會有好的回報。
+                                    </p>
+                                </div>
+
+                                <div class="segmen">
+                                    <H1>大學畢業以前</H1>
+                                    <p>這時的我是一個得過且過的人，對於未來會感到茫然但卻也不曾試圖努力 去做出任何的改變，只是每天渾渾噩噩的度過日子，所謂的生命就像是整個人 泡在酒精之中，你偶爾會驚覺到時間正在流逝，但卻早已對此麻木與淡然。這 個狀態一直持續到大學畢業典禮當天，我突然感到徬徨以及不知所措，我開始 覺得心虛，覺得不夠資格拿起正拿在手上的畢業證書，即使畢業時的成績名列 全班前十五名，但這卻只是讓我感到更加的空虛，我不斷地質問自己大學四年 的時間是否是全心全意度過的?答案是否定的… 對於自己，我是很感到自卑的，甚至常常覺得自己是天底下卻沒有用的 人。但也正因為我認為自己是如此的卑微，所以我願意花很多的時間來精進自己。在戶塚隆將著作的「為什麼世界頂尖人士都重視這樣的基本功」一書中， 清楚地寫道 : 永遠不要在自己的生崖之中留下逃學紀錄。你應該假裝自己很優秀，直到你真的很優秀了為止。 在這時，我認為自己最想要改變的事情就是想要一個好的學歷，所以在付出充分且充足的準備之後，我也順利的考上了清華資工研究所。而這也讓我更加地相信只要努力，只要你願意付出，勢必就會有好的回報。
+                                    </p>
+                                </div>
+
+                                <div class="segmen">
+                                    <H1>研究所就讀期間 </H1>
+                                    <p>我在課程上常想像自己就像是一個海綿，必須汲汲營營的吸取學校的知 識，所以我修了許多的課程。像是網路領域，林華君老師所開的排隊理論以及黃能富老師所開的計算機網路、像是資工領域，黃婷婷老師所開的計算機結構 和鍾葉青老師所開的作業系統以及大數據領域相關的，吳尚鴻老師開的機器學 習理論以及李哲榮老師開的數值最佳化等等。 在佩德羅．多明戈斯的大演算一書中說「機器學習有五大學派」但不論是 哪一門學派，其共通的脈絡是如何呈現問題(學習演算法 e.g. Decision Tree 演算 法) 、如何評估你的模型好壞 (測量指標 e.g. AUC) 以及如何最佳化你的模型 (最佳化方法 e.g. 梯度下降法) 。很幸運的是清大有吳尚鴻老師開的機器學習理論以及李哲榮老師開的數值最佳化 (而且老師們真的上的很好，我認為跟林軒 田老師開的機器學習基石以及技法這兩課程有的比) 。這兩堂課已經奠定了我對於機器學習認知的基礎。若是日後碰到與機器學習有關的問題，我相信我並不會躊躇不前不知從何下手，反而是會很開心，自己得到一個練習的機會了。另外在實驗室方面，我學習到如何與學長姐以及同學相處融洽，才不會惹 人厭惡，以及在對待學弟妹時，有時候也要拿出嚴厲的態度去杜絕他們做出傻 事… 同時我也與我研究所的老師學習如何正確的做研究。許多人總認為論文是 對於以後想當學者的人，才有用處。但事實上，學習如何做研究不只是學習如何生產一篇論文而已，同時也能培養你對於有訣竅地快速掌握問題的能力，以及如何具有創意的思考解決問題，並且提高在做事情上能夠自我嚴謹要求的程 度。 在此感謝我的老師林華君對於我不濟餘力的指導。
+                                    </p>
+                                </div>
+
+                                <div class="segmen">
+                                    <H1>在工研院實習期間</H1>
+                                    <p>另外我很幸運地有這個榮幸能夠在工研院實習，該單位請我負責(接手)一套編輯輸入工具的維護和開發(此工具是該專案產品，專門讓使用者輸入資料的工具) 實習讓我學習到了很多，該單位的組長曾教導過我說「專案就像是一台 巨大的機器，每個人都只是其中的一顆小螺絲釘，就算你將你的工作完成到了百分之一百的完美，但卻因此而耽誤到了其他人的進度，那麼總體來說，你反而是得到了零分」。這句話讓我記憶猶新，也因此，在每次要開始執行工作前，總會先與負責帶我的工程師討論，這樣做好不好呢? 我大概需要花多久時間? 其他人是否能夠接受呢? 等等如雲的問題。而且在實習的這段時間，我發現我 的程式能力有所進展，以及認知到演算法以及資料結構的重要性!!! 例如我曾 經將這套輸入工具某一個功能的效能改善了好幾倍，原本需要跑好幾天也不一 定跑得完的資料輸入量，但我僅僅是改用了資料結構，由 dictionary(hash Table) 改為陣列，就將速度提升至五分鐘以內解決(忽略其他細節)。 但事實上在我剛進來工研院實習時，我曾經覺得很絕望…因為我覺得工研院內工程師的程度太高了，我不確定是否能夠在有生之年追趕到他們的程度呢? (當時的我真的很認真地思考過現在轉行去賣雞排是否還來的及?) 但好在我並沒有放棄希望，並且不斷地向他們學習以及請教，也因此在之後才能開發出上述 較為快速的演算法，並且最終贏得了他們的稱讚。 後來為了想要修蔡仁松老師所開的「高科技創業與營運」這堂課程，我與工研院內帶我的工程師表達了請辭之意，雖然他也試圖慰留我，但我認為我已經在這實習了八個月了，也該是時候換個環境來讓自己成長了。人不能像隻烏 龜一樣永遠待在舒適的環境當中，那只會讓自己躊躇不前不長進，所以獅子才會把自己的孩子丟入山崖下，所以孟母才會帶著孟子搬家三次，那麼我也該為 了自己，把自己投入火焰之中才是。為人應當為了得到燦爛的榮耀而付出一切 才是。在聽過我委婉表達拒絕之意後，帶我的工程師就像我的大哥一樣真誠的表達了他對我的祝福，當然也順便請求我能否多做一陣子，最好是能待到他們找到新人…
+                                    </p>
+                                </div>
+
+                                <div class="segmen">
+                                    <H1>總結 </H1>
+                                    <p>對於未來，若是我說我毫不茫然的話，那一定是騙人的!但我曾看過一本書 - Tina SEELIG 著作的「真希望我 20 歲就懂的事。」書中內容是這樣寫的:「欣然接受這樣的不確定吧! 許多有趣的經驗或許就是發生在你偏離既定的道路時，或許這是自己看清楚周遭世界的豐富機會 和無窮可能性的時候」所以我對自己說，我必須要深刻地相信我自己是一個不會在做之前就懼怕失敗並且能夠勇敢地挑戰它們的人。在未來的職場生涯，除了希望自己能夠表現出遠超過自己所期待的表現之外，更希望自己能夠被付予更多更重要的任務，對公司帶來更多的貢獻，並與公司共同成長。
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
