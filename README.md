@@ -1,7 +1,7 @@
 # myResume
 https://s0920832252.github.io/myResume/
 
-####這是我的履歷
+### 這是我的履歷
 
 * 使用Bootstrap 再css排版以及事件,  除此之外,為了文字排版,我自己也寫了一個小的javaScript小函式,刪除多餘的文字...
 * 歡迎作為template 使用.
